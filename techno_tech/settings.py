@@ -191,6 +191,12 @@ MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
+CLOUDINARY_STORAGE = {
+        'CLOUD_NAME': os.environ.get('dvbhrs1gf'),
+        'API_KEY': os.environ.get('788785116973719'),
+        'API_SECRET': os.environ.get('8U9Kg-ES3PA756lv4s8J3f7g3Ig'),
+}
+
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 
@@ -216,11 +222,3 @@ else:
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# CLOUDINARY = {
-#       'cloud_name': 'dvbhrs1gf',  
-#       'api_key': '788785116973719',  
-#       'api_secret': '8U9Kg-ES3PA756lv4s8J3f7g3Ig',
-#       'api_proxy': 'https://console.cloudinary.com/console/c-13ea96d09bc026fff62e06d1a15714'
-# }
-

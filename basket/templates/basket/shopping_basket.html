@@ -70,14 +70,14 @@
                                                         <option>10</option>
                                                     </select>
                                                 </div>
-                                                <input class="fa-input sensical-button text-center rounded-0 text-uppercase" type="submit" value="&#xf291; update basket">
+                                                <input class="fa-input techno-button text-center rounded-0 text-uppercase" type="submit" value="&#xf291; update basket">
                                             </div>
                                         </form>
                                         <form class="form update-form" method="POST" action="{% url 'remove_item' item.item_id %}">
                                             {% csrf_token %}
                                             <div>
                                                 <div class="input-group-selector">
-                                                    <input class="fa-input sensical-button text-center rounded-0 text-uppercase" type="submit" value="&#xf2ed; remove from basket">
+                                                    <input class="fa-input techno-button text-center rounded-0 text-uppercase" type="submit" value="&#xf2ed; remove from basket">
                                                 </div>    
                                             </div>
                                         </form>
@@ -95,7 +95,7 @@
                         <h3>Empty Basket!</h3>
                         <p>Looks like you haven't added anything to your basket.</p>
                         <p>Click below to continue browsing our quality, affordable range.</p>
-                        <a href="{% url 'products' %}" class="sensical-button text-center rounded-0 mt-2">
+                        <a href="{% url 'products' %}" class="techno-button text-center rounded-0 mt-2">
                             <span class="icon"><i class="fa-solid fa-circle-arrow-left"></i></span>
                             <span class="text-uppercase">Find Some Products!</span>
                         </a>

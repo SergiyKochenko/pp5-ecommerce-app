@@ -12,7 +12,7 @@
 
 <!-- Ensures page has not been accessed directly by URL -->
 
-{% if "sensical" in request.META.HTTP_REFERER %}
+{% if "techno" in request.META.HTTP_REFERER %}
 
 <!-- Package delete page warning logo and text content -->
 
@@ -32,8 +32,8 @@
                         {% csrf_token %}
                         <br>
                         <p>You are about to delete this Package!</p>
-                        <a href="{{request.META.HTTP_REFERER}}" class="sensical-button">Go Back</a>
-                        <input type="submit" value="Delete" class="sensical-button">
+                        <a href="{{request.META.HTTP_REFERER}}" class="techno-button">Go Back</a>
+                        <input type="submit" value="Delete" class="techno-button">
                         
                     </form>
                 </div>
@@ -62,7 +62,7 @@
             <br>
             
         
-        <p>Please login or <a href="{% url 'home' %}" class="sensical-button">Click Here</a> to visit the Sensical.ie Home page</p>     
+        <p>Please login or <a href="{% url 'home' %}" class="techno-button">Click Here</a> to visit the Techno.ie Home page</p>     
     </div>
 </div>
 

@@ -28,7 +28,7 @@ form a {
     margin-top: 220px;
 }
 
-.sensical-text {
+.techno-text {
     color: #0c2d6c;
 }
 
@@ -77,14 +77,14 @@ form a {
     margin-bottom: 0.5rem;
 }
 
-.sensical-messages {
+.techno-messages {
     position: fixed;
     top: 36px;
     right: 20px;
     z-index: 9991;
 }
 
-.sensical-toast {
+.techno-toast {
     background-color: #0c2d6c;
     overflow: visible;
     border: solid 1px white;
@@ -334,7 +334,7 @@ video {
     margin-bottom: 2rem;
 }
 
-.sensical-button {
+.techno-button {
     font-size: 14px;
     padding: 0.5rem;
     text-transform: uppercase;
@@ -347,14 +347,14 @@ video {
     border: solid 1px #0c2d6c;
 }
 
-.sensical-button:hover {
+.techno-button:hover {
     background-color: #75e6ff;
     text-decoration: none;
     color: #0c2d6c;
     border: solid 1px #0c2d6c;
 }
 
-.sensical-button-border {
+.techno-button-border {
     border: 1px solid white;
 }
 
@@ -1115,13 +1115,13 @@ video {
     .basket-img {
         min-width: 206px;
     }
-    .sensical-messages {
+    .techno-messages {
         position: fixed;
         top: 5px;
         right: 5px;
         z-index: 9991;
     }
-    .sensical-toast {
+    .techno-toast {
         min-width: 10px;
         max-width: 280px;
     }

@@ -64,19 +64,19 @@
                                 </div>
 
                                 <div class="col-12 mt-1">
-                                    <a href="{% url 'products' %}" class="sensical-button text-center rounded-0 mt-2">
+                                    <a href="{% url 'products' %}" class="techno-button text-center rounded-0 mt-2">
                                         <span class="icon" ><i class="fa-solid fa-circle-arrow-left"></i></span>
                                         <span class="text-uppercase">Find More Products</span>
                                     </a>
                                 </div>
                                 {% if product.in_stock %}
                                 <div class="col-12 ml-1 mb-1">
-                                    <input class="fa-input sensical-button text-center rounded-0 text-uppercase mt-2" type="submit" value="&#xf291; Add To Basket">
+                                    <input class="fa-input techno-button text-center rounded-0 text-uppercase mt-2" type="submit" value="&#xf291; Add To Basket">
                                 </div>
                                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
                                 {% endif %}
                                 <div class="col-12  mb-1">
-                                    <a class="sensical-button" href="{% url 'add_to_wishlist' product.id %}">
+                                    <a class="techno-button" href="{% url 'add_to_wishlist' product.id %}">
                                         <span class="icon"><i class="fa-solid fa-trash"></i></span>
                                         <span>Remove from Wishlist</span>
                                     </a>
