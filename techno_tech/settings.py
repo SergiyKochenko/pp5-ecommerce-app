@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-%kx+^laf46=b5#d^%cdais0m_1#j-(&17b*fzn&gfej)q&b-qc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['techno-tech.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -136,13 +136,11 @@ WSGI_APPLICATION = 'techno_tech.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
-# DATABASES = {
-#     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-#     }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -191,11 +189,6 @@ MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
-CLOUDINARY_STORAGE = {
-        'CLOUD_NAME': os.environ.get('dvbhrs1gf'),
-        'API_KEY': os.environ.get('788785116973719'),
-        'API_SECRET': os.environ.get('8U9Kg-ES3PA756lv4s8J3f7g3Ig'),
-}
 
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
